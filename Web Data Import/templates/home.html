@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='background-style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fancy-file/styles.css')}}" />
+    
+    <title>Input Files</title>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data" action="/visualization">
+        <h2>Selección de Archivos de la Base de Datos</h2>
+      
+        <div>
+            <span>Archivo</span>
+            <input type="file" class='fancy-file' id="tab" name="dataset" data-button="Examinar" data-empty="Sin archivos"/>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Extraer</button>
+        
+    </form>
+    <script src="{{ url_for('static', filename='fancy-file/script.js')}}"></script>
+</body>
+</html>

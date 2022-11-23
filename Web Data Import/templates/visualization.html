@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vbackground-style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fancy-file/styles.css')}}" />
+    
+    <title>Output Files</title>
+</head>
+<body>
+    <p>&nbsp;</p>
+    <h2>Visualización de los Datos</h2>
+    <p>&nbsp;</p>
+    <div id="list">
+      <p><iframe src="{{ url_for('static', filename='Dataset.txt')}}" frameborder="0" height="1000" width="60%"></iframe></p>
+    </div>
+</body>
+</html>
